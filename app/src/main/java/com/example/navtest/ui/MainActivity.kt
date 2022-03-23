@@ -1,7 +1,7 @@
 package com.example.navtest
 
-import Fragments.Downloaded
-import Fragments.HomeFragment
+import com.example.navtest.fragments.Downloaded
+import com.example.navtest.fragments.HomeFragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment

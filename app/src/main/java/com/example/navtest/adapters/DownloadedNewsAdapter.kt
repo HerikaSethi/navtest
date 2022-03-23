@@ -13,18 +13,15 @@ class DownloadedNewsAdapter(val context: Context):RecyclerView.Adapter<Downloade
 
     var users: List<NewsTable> = listOf()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setDataItems(dataList: List<NewsTable>) {
         users = dataList
+        notifyDataSetChanged()
     }
-    //@SuppressLint("ResourceType")
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DArticleViewHolder {
-//        val view = LayoutInflater.from(context).inflate(R.layout.downloaded_item_layout, parent, false)
-//        //val view = LayoutInflater.from(context).inflate(R.id.downloaded_item_layout, parent, false)
-//
-//        return  DArticleViewHolder(view)
       val view = LayoutInflater.from(context).inflate(R.layout.downloaded_item_layout,parent,false)
       return DArticleViewHolder(view)
-
     }
 
     override fun onBindViewHolder(holder: DArticleViewHolder, position: Int) {

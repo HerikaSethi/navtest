@@ -1,6 +1,5 @@
 package com.example.navtest
 
-import Fragments.HomeFragment
 import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
@@ -9,14 +8,10 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
-import androidx.room.Room
 import com.bumptech.glide.Glide
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 
 class NewsAdapter(val context: Context, val articles:List<Article>): RecyclerView.Adapter<NewsAdapter.ArticleViewholer>(){
