@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#D3D3D3"
+    android:padding="16dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/newsTitle"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/newsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="4"
+        android:layout_marginTop="8dp"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/newsDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/purple_200"
+        android:text="Download" />
+
+
+</LinearLayout>
